@@ -73,6 +73,8 @@ int main(int argc, char *argv[]) {
         if(value==-1)
         {
                 printf("no match\n");
+                fclose(fp);
+                exit(1);
         }else{
                 printf("%i\n", value);
         }
