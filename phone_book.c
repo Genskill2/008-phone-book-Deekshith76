@@ -113,7 +113,7 @@ void free_entries(entry *p) {
   free(p);
   while(p->next != NULL)
   {
-    free(p-next);
+    free(p->next);
     p = p->next;
   } 
 }
